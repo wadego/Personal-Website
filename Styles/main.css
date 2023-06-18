@@ -1,0 +1,275 @@
+html {
+    height: 100%;
+}
+
+header {
+    color: ghostwhite;
+    background-color:#333333;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0px 4px rgb(0 0 0 / 32%), 0 0px 10px rgb(0 0 0 / 23%);
+}
+
+/* style for nav */
+header nav {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+/* style for ul */
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 40px;
+}
+
+.circle-img {
+    float: left;
+    width: 40%;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.circle-img img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+body {
+    min-height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 33px;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+a:hover {
+    color: #aa6a6a;
+    text-decoration: underline;
+}
+
+.header-a {
+    color: rgb(254, 252, 252);
+    text-decoration: none;
+}
+
+.header-a-selected {
+    color:gray;
+    text-decoration: none;
+}
+
+.header-a-selected:hover {
+    color:gray;
+    text-decoration: none;
+}
+
+.body-a {
+    color: coral;
+    text-decoration: none;
+}
+
+.footer-a {
+    text-decoration: none;
+}
+
+.index-aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    padding-left: 20px;
+    padding-right: 120px;
+}
+
+.resume-main {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px;
+}
+
+.resume-aside {
+    display: grid;
+    align-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align:left;
+    background: #e0ebf5;
+    padding: 50px;
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.resume-aside-photo {
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 180px;
+}
+
+.resume-aside-info {
+    padding: 20px;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+}
+
+.separator:before,
+.separator:after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000;
+}
+
+.separator span {
+    margin: 0 10px;
+}
+
+.content {
+    flex: 1;
+}
+
+.resume-body {
+    display: grid;
+    align-content: start;
+}
+
+.resume-body h1 {
+    background-color: #3b82f6;
+    background-image: linear-gradient(to right, #10b981, #3b82f6);
+    color: white;
+    padding: 30px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.resume-body h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 8px;
+    background: #e0ebf5;
+    border-radius: 4px;
+}
+.resume-body h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.with-date {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+footer {
+    color:darkblue;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+.footer-img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.footer-img:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.courses-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.course-form {
+	background-color: #e0ebf5;
+	width:  1200;
+	height: 100px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+
+.course-form > div {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.search-bar {
+	font-size: 15px;
+	padding: 10px;
+	width: 300px;
+}
+
+.search-bar::placeholder {
+  font-size: 15px;
+}
+
+.course-select {
+  font-size: 18px;
+  padding: 6px 10px;
+}
+
+.course-button {
+  font-size: 18px;
+  padding: 8px 12px;
+}
+
+.course-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 20px;
+}
+
+.course-card {
+	border: 1px solid #e0ebf5;
+	padding: 10px;
+	text-align: center;
+}
+
+.course-card img {
+	width: 200px;
+	height: 250px;
+}

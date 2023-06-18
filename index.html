@@ -4,37 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Wei Tang">
-    <title>Home Page</title>
-    <link rel="stylesheet" type="text/css" href="Styles/assignment1.css">
+    <title>Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="Styles/main.css">
 </head>
 <body>
     <!--header-->
     <header>
         <nav>
             <ul>
-                <li><a>Resume</a></li>
-                <li><a>My Courses</a></li>
+                <li><a class="header-a-selected">Home</a></li>
+                <li><a href="resume.html" class="header-a">Resume</a></li>
+                <li><a href="courses.html" class="header-a">Courses</a></li>
             </ul>
         </nav>
     </header>
 
     <!--body-->
-    <main>
+    <main class="content">
         <div>
             <div class="circle-img">
                 <span><img src="Images/photo.png"></span>
             </div>
-            <div>
-                <h1>Hi, I'm <strong>Wei Tang</strong>.</h1>
-                <p>Nice to meet you! My name is Wei Tang(Wade). I am a computer programming student studying at Algonquin college and also a graduate from Beijing University of Posts and Telecommunications with a master degree in Computer Science.</p>
-                <a>Learn more about me</a>
-            </div>
+            <aside class="index-aside">
+                <h1>Hi, I'm Wei Tang.</h1>
+                <p>Nice to meet you! I am a computer programming student studying at <a href="https://www.algonquincollege.com/" class="body-a" target="_blank">Algonquin college</a> and also a graduate from Beijing University of Posts and Telecommunications with a master degree in Computer Science.</p>
+            </aside>
+        </div>
+        <div>
+            <p>I believe Technology can change the world. Let's make a better world.</p>
         </div>
     </main>
 
     <!--footer-->
     <footer>
-
+        <p>
+            <span>Contact Me:</span>
+            <a href="mailto:tangwei0303@gmail.com" class="footer-a">
+                <img src="Images/Email.png" alt="Email" class="footer-img"/>
+            </a>
+            <a href="https://www.linkedin.com/in/wade-tang-864aa234/" target="_blank" class="footer-a">
+                <img src="Images/Linkedin.png" alt="LinkedIn" class="footer-img"/>
+            </a>
+            <a href="https://github.com/wadego/Personal-Website" target="_blank" class="footer-a">
+                <img src="Images/Github.png" alt="Github" class="footer-img"/>
+            </a>
+        </p>
     </footer>
 </body>
 </html>
