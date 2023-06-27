@@ -1,3 +1,7 @@
+/*
+Wei Tang
+*/
+
 html {
     height: 100%;
 }
@@ -11,14 +15,14 @@ header {
 }
 
 /* style for nav */
-header nav {
+header>nav {
     display: flex;
     justify-content: center;
     font-size: 18px;
 }
 
 /* style for ul */
-header ul {
+header nav ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
@@ -219,7 +223,12 @@ footer a:hover {
     padding: 20px;
 }
 
-.course-form {
+.courses-h1 {
+    font-size: 33px;
+    margin-top: 10px;
+}
+
+.course-fieldset {
 	background-color: #e0ebf5;
 	width:  1200;
 	height: 100px;
@@ -229,6 +238,7 @@ footer a:hover {
 	justify-content: center;
 	align-items: center;
 	gap: 50px;
+    border-style: outset;
 }
 
 .course-form > div {
